@@ -1,0 +1,628 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('donategoods.jpg');
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Make body a flex container */
+    flex-direction: column; /* Stack content vertically */
+}
+
+
+.main-content {
+    flex: 1; /* Ensures the content takes up available vertical space */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.281); /* Transparent header */
+    padding: 20px 0;
+    width: 100%;
+    margin-bottom: 50px; /* Add space below the header */
+}
+
+/* Container for logo and navbar */
+.navbarContainer {
+    display: flex;
+    justify-content: space-between; /* Align logo and navbar on opposite sides */
+    align-items: center; /* Vertically align logo and nav items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 150px;
+    border-radius: 50%; /* Circular logo */
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Align nav items horizontally */
+    gap: 20px; /* Space between menu items */
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Vertically align nav items */
+    
+}
+
+
+nav ul li {
+    position: relative; /* For dropdown functionality */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Add padding around the links */
+    transition: color 0.3s ease; /* Smooth transition */
+    font-size: 24px;
+}
+
+
+/* On hover, change text color */
+nav ul li a:hover {
+    color: #f56316; /* Orange hover effect */
+}
+
+
+.getStartedbtn{
+    background-color: white;
+    color: #f7941d;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.getStartedbtn:hover {
+    background-color: #f56316;
+    color: white;
+}
+/* Call-to-action (CTA) button styling */
+.cta {
+    background-color: white;
+    color: #f7941d;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #f56316;
+    color: white;
+}
+
+/* Dropdown Menu Styling */
+nav ul li .dropdown {
+    display: none; /* Hide dropdown initially */
+    position: absolute;
+    top: 100%; /* Position below the parent link */
+    left: 0;
+    background-color: rgba(255, 206, 174, 0.781); /* Dark background for dropdown */
+    border-radius: 5px;
+    min-width: 200px; /* Set a minimum width */
+    box-shadow: 0 4px 10px rgba(255, 206, 174, 0.781); /* Add a slight shadow */
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+nav ul li .dropdown li {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown li a {
+    color: white;
+    display: block; /* Make the link cover the full width */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li .dropdown li a:hover {
+    background-color: #f56316;
+    color: white;
+}
+
+
+
+
+/* Hero Section */
+
+#hero {
+    height: 80vh;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 410px;
+    padding-top: 250px;
+}
+/* Add extra margin to the "How It Works" section to create space */
+#how-it-works {
+    margin-top: 5px; /* Add margin-top to separate it from the hero section */
+    background-color: #f7c78e;
+    color: #000000;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.hero-content h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+.hero-content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin: 20px 0;
+    color: white;
+ 
+
+   
+}
+
+/* Section Styling */
+
+.section-padding {
+    padding: 60px 0;
+}
+
+#donate{
+    margin-top: 5px; /* Add margin-top to separate it from the hero section */
+    background-color: #f7c78e; 
+    color: #000000;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f7941d;
+    
+}
+
+.donationh3{
+    color:white;
+}
+
+.donationp{
+    color:white;
+}
+
+.steps,
+.categories {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.steps .step,
+.categories .category {
+    width: 30%;
+}
+
+.form-box {
+    max-width: 400px; /* Set a max width for the form */
+    margin: 20px auto; /* Center horizontally with auto margins */
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+
+/* Forms */
+
+#request{
+    margin-top: 5px; /* Add margin-top to separate it from the hero section */
+    background-color: #f7c78e; 
+}
+
+#about{
+    margin-top: 5px; /* Add margin-top to separate it from the hero section */
+    background-color: #f7c78e; 
+    color: #000000;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#contact{
+    margin-top: 5px; /* Add margin-top to separate it from the hero section */
+    background-color: #f7c78e; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #f7941d;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f56316;
+}
+
+#donation{
+    color:white;
+}
+
+/* Footer */
+
+html,
+body {
+    height: 100%;
+    /* Full height */
+    margin: 0;
+    /* Remove default margins */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* Arrange header, content, and footer in a column */
+}
+
+footer {
+    background-color: #333;
+    /* Footer background color */
+    color: white;
+    /* Footer text color */
+    padding: 50px 0;
+    /* Footer padding */
+    text-align: center;
+    /* Center the text */
+    margin-top: auto;
+    /* Push footer to the bottom */
+}
+
+footer ul {
+    list-style: none;
+    /* Remove bullet points */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center items */
+}
+
+footer ul li {
+    margin: 0 5px;
+    /* Space between list items */
+}
+
+footer ul li a {
+    color: white;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+
+
+ /* Scoped styling for donate_shoes.php form */
+ .form-container_donate-shoes {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.form-container_donate-shoes donate-shoes_h2 {
+    text-align: center;
+    color: #dfb37d;
+}
+.form-group_donate-shoes {
+    margin-bottom: 20px;
+}
+.form-group_donate-shoes donate-shoes_label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group_donate-shoes input, 
+.form-group_donate-shoes textarea, 
+.form-group_donate-shoes select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.submit-btn_donate-shoes, .cancel-btn_donate-shoes, .schedule-btn_donate_shoes, .dropoff-btn_donate-shoes {
+    padding: 10px 20px;
+    background-color: #f7941d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.submit-btn_donate-shoes:hover, .cancel-btn_donate-shoes:hover, .schedule-btn_donate_shoes:hover, .dropoff-btn_donate-shoes:hover {
+    background-color: #e67817;
+}
+.cancel-btn_donate-shoes {
+    background-color: #999;
+}
+.cancel-btn_donate-shoes:hover {
+    background-color: #777;
+}
+
+
+.dropoff-select_donate-shoes {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.donate-shoes_select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.donate-shoes_select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+/* Modal Styles */
+.donate-shoes-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.donate-shoes-modal-content {
+    background-color: #fefefe;
+    margin: 20% auto; /* Centered vertically with 20% from the top */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Set a fixed width for the modal */
+    max-width: 90%; /* Allow some responsiveness on smaller screens */
+    border-radius: 8px;
+    color: black;
+}
+
+.donate-shoes-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.donate-shoes-close:hover,
+.donate-shoes-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Scoped styling for Request Items form */
+.form-container_request-items {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.form-container_request-items h2 {
+    text-align: center;
+    color: #dfb37d;
+}
+
+.form-container_request-items .form-group {
+    margin-bottom: 20px;
+}
+
+.form-container_request-items .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container_request-items input, 
+.form-container_request-items textarea, 
+.form-container_request-items select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-container_request-items button {
+    padding: 10px 20px;
+    background-color: #f7941d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-container_request-items button:hover {
+    background-color: #e67817;
+}
+
+/* Scoped styling for Available Donations section */
+.available-donations {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.available-donations h2 {
+    text-align: center;
+    color: #dfb37d;
+}
+
+.available-donations ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.available-donations li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.available-donations li p {
+    margin: 5px 0;
+}
+
+.available-donations button {
+    padding: 10px 20px;
+    background-color: #f7941d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.available-donations button:hover {
+    background-color: #e67817;
+}
+
+/* Scoped styling for Notification Preferences form */
+.notification-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.notification-form h2 {
+    text-align: center;
+    color: #dfb37d;
+}
+
+.notification-form .form-group {
+    margin-bottom: 20px;
+}
+
+.notification-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.notification-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.notification-form button {
+    padding: 10px 20px;
+    background-color: #f7941d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.notification-form button:hover {
+    background-color: #e67817;
+}
+
+/* Scoped footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
